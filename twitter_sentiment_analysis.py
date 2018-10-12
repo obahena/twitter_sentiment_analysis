@@ -12,5 +12,7 @@ api = TwitterAPI(consumer_key='4tIauUZj5suBUnT3CvjIwTMrZ',
 
 r = api.request('search/tweets', {'q': 'Keenum'})
 
+
+#Print out items on console
 for item in r:
     print(item['text'] if 'text' in item else item)
